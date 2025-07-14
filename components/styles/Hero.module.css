@@ -1,0 +1,34 @@
+.hero {
+  text-align: center;
+  padding: 5rem 1rem 3rem 1rem;
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  color: #fff;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 8px 32px 0 rgba(24,90,157,0.12);
+  animation: fadeInDown 1.2s cubic-bezier(.23,1.01,.32,1) 0.1s both;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 24px #185a9d55;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

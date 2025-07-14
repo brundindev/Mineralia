@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #181818;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 16px 0 rgba(0,0,0,0.08);
+  animation: fadeInUp 1s cubic-bezier(.23,1.01,.32,1) 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

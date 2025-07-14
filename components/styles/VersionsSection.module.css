@@ -1,0 +1,58 @@
+.section {
+  padding: 2.5rem 1rem;
+  background: #e1f5fe;
+  margin-bottom: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px 0 rgba(2,136,209,0.06);
+  animation: fadeIn 1s cubic-bezier(.23,1.01,.32,1) 0.7s both;
+}
+
+.versions-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.version-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px 0 rgba(2,136,209,0.10);
+  padding: 1.5rem;
+  width: 200px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: fadeInUp 0.8s cubic-bezier(.23,1.01,.32,1) both;
+}
+
+.version-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px 0 rgba(2,136,209,0.18);
+}
+
+.version-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0288d1;
+  margin-bottom: 0.5rem;
+}
+
+.version-desc {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+} 
